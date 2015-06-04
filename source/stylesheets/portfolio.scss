@@ -1,0 +1,171 @@
+// structure
+
+body {
+  background: #fff;
+  text-align: center;
+  font-family: Source Code Pro, monospace;
+  font-size: $baseline;
+  font-weight: 200;
+  width: 100%
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: italic;
+  font-weight: 200;
+}
+
+
+h1 {
+  color: #000;
+  font-size: $baseline;
+  margin: $baseline 0;
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 $baseline * 3;
+  font-size: $baseline * 1.5;
+  text-align: center;
+}
+
+h3 {
+  margin: (1.5 * $baseline) 0 (1.5 * $baseline) 0;
+  font-size: $baseline * 1.0;
+}
+
+.section-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  padding: $baseline * 3 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0 $baseline * 2;
+  position: relative;
+}
+
+li {
+  margin: $baseline / 2 0;
+  padding: 0;
+  list-style: none
+}
+
+li:before {
+  content: "→";
+  position: absolute;
+  left: $baseline * 0.66;
+  line-height: $baseline;
+}
+
+.appdownload {
+  margin: $baseline 0;
+}
+
+section.features,
+section.tech,
+section.download {
+  max-width: 400px;
+  margin: (3 * $baseline) auto;
+}
+
+section.download {
+  text-align: center;
+}
+
+// style
+
+a.download {
+  border: 1px dashed #333;
+  display: inline-block;
+  margin: $baseline 0 $baseline -1px;
+  padding: $baseline * 0.66;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.download:hover {
+  border-style: solid;
+  text-decoration: none;
+}
+
+a.download:active {
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline  ;
+}
+
+// looper
+
+.app-image {
+  width: 30%;
+  margin: 0 1%
+}
+.looper-preview {
+  background-color: lighten(#F7A4CF, 15%);
+}
+
+.image-looper {
+  background-color: lighten(#F7A4CF, 15%);
+  background-image:
+    url("/images/looper-shot-1.png"),
+    url("/images/looper-shot-2.png"),
+    url("/images/looper-shot-3.png");
+  height: 800px;
+  background-position: 0 $baseline, 50% $baseline, 100% $baseline;
+  background-size: 33%;
+  background-repeat: no-repeat;
+}
+
+.looper {
+  background: darken(#FBA4D1, 20%);
+  background: #fff;
+  color: #444;
+}
+
+footer {
+  margin: $baseline 0;
+}
+
+footer .content {
+  text-align: center;
+}
+
+// bview
+
+.bview-preview {
+  color: #eee;
+  background: #333;
+}
+
+.phone {
+  margin: 0 auto;
+  background: url("/images/phone-black.png") no-repeat 0 0;
+  background-size: cover;
+  padding: 9.7% 2.9%
+}
+
+.phone video {
+  border: 1px solid #e9e9e9;
+}
+
+
+
+
+// small screens
+
+@media only screen and (max-device-width : 667px), only screen and (max-width : 667px) {
+  .section-content {
+    max-width: auto;
+  }
+  .app-image {
+    width: 60%;
+    margin: $baseline 20%;
+  }
+}

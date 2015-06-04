@@ -3,12 +3,23 @@ title: Burning Robot
 ---
 
 head
-  h1 Burning Robot
+  .content
+    h1 Burning Robot
+    div
 main
-  section.looper
-    article
-      h2 Looper
-      'it's a thing
-  section.bview
+  article.looper
+    = partial 'portfolio/looper'
+  article.bview
+    = partial 'portfolio/bview'
   section.layoutplus
-  section.contact
+    article.content
+      .bg.bg-layoutplus
+        = partial 'portfolio/layoutplus'
+  section.retired
+    h2 Retired Apps
+  section.bikemaps
+    article.content
+      .bg.bg-bikemaps
+        = partial 'portfolio/bikemaps'
+footer
+  .content Handcrafted in Portland, Oregon
