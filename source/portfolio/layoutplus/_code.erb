@@ -1,0 +1,5 @@
+<code class="swift"><code class="line comment">// Write this 💎✨</code>
+<code class="line"><code class="method">addConstraint</code>(label.<code class="attr">layout</code>.<code class="attr">width</code> <code class="fn">&lt;=</code> superview.<code class="attr">layout</code>.<code class="attr">width</code> <code class="fn">/</code> <code class="literal">2</code> <code class="fn">+</code> <code class="literal">20</code>)</code>
+
+<code class="line"><code class="comment">// Instead of this 💩</code></code>
+<code class="line"><code class="method">addConstraint</code>(<code class="class">NSLayoutConstraint</code>(item: label, attribute: .<code class="enum">Width</code>, relatedBy: .<code class="enum">LessThanOrEqual</code>, toItem: superview, attribute: .<code class="enum">Width</code>, multiplier: <code class="literal">0.5</code>, constant: <code class="literal">20</code>))</code></code>
