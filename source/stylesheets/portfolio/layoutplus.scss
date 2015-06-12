@@ -1,0 +1,55 @@
+// layout+
+
+$bg-darkblue: #0B1039;
+$text-white: #fff;
+$text-cyan: #06D8F8;
+$text-green: #9FE67C;
+$text-grey: #8092AF;
+$text-pink: #FFA0FD;
+$text-purple: #9A77E1;
+
+pre.code {
+  padding: 0 2 * $baseline;
+  background: $bg-darkblue;
+  color: $text-white;
+}
+
+code.line {
+  display: inline-block;
+  margin: 0 0 0 1em;
+  text-indent: -1em;
+}
+
+code.comment {
+  color: $text-grey;
+}
+
+code.class,
+code.enum,
+code.method {
+  color: $text-purple;
+}
+
+code.attr {
+  color: $text-pink;
+}
+
+code.literal {
+  color: $text-green;
+}
+
+code.fn {
+  color: $text-cyan;
+}
+
+.layoutplus-preview {
+  background: $bg-darkblue;
+}
+
+.layoutplus-preview .section-content {
+  max-width: 45em;
+}
+
+.layoutplus-preview h2 {
+  color: $text-grey;
+}

@@ -1,0 +1,19 @@
+// bike maps
+
+.bikemaps-preview {
+  background: #6BB54D;
+  color: #fff;
+}
+
+
+.retired {
+  // background: #333;
+  color: #aaa;
+  border-top: 1px dashed #aaa;
+  padding: $baseline * 3 0;
+}
+
+.retired h2 {
+  font-size: $baseline * 1.25;
+  margin: 0;
+}

@@ -137,76 +137,6 @@ footer .content {
   text-align: center;
 }
 
-// bview
-
-.bview-preview {
-  color: #eee;
-  background: #333;
-}
-
-.phone {
-  margin: 0 auto;
-  background: url("/images/phone-black.png") no-repeat 0 0;
-  background-size: cover;
-  padding: 9.7% 2.9%
-}
-
-.phone video {
-  border: 1px solid #e9e9e9;
-}
-
-// layout+
-
-$bg-darkblue: #0B1039;
-$text-white: #fff;
-$text-cyan: #06D8F8;
-$text-green: #9FE67C;
-$text-grey: #8092AF;
-$text-pink: #FFA0FD;
-$text-purple: #9A77E1;
-
-pre.code {
-  padding: 0 2 * $baseline;
-  background: $bg-darkblue;
-  color: $text-white;
-}
-
-code.line {
-  display: inline-block;
-  margin: 0 0 0 1em;
-  text-indent: -1em;
-}
-
-code.comment {
-  color: $text-grey;
-}
-
-code.class,
-code.enum,
-code.method {
-  color: $text-purple;
-}
-
-code.attr {
-  color: $text-pink;
-}
-
-code.literal {
-  color: $text-green;
-}
-
-code.fn {
-  color: $text-cyan;
-}
-
-.layoutplus-preview {
-  background: $bg-darkblue;
-}
-
-.layoutplus-preview h2 {
-  color: $text-grey;
-}
-
 // small screens
 
 @media only screen and (max-device-width : 667px), only screen and (max-width : 667px) {
@@ -218,3 +148,8 @@ code.fn {
     margin: $baseline 20%;
   }
 }
+
+
+@import "portfolio/bikemaps";
+@import "portfolio/bview";
+@import "portfolio/layoutplus";
