@@ -1,24 +1,15 @@
+@import 'config';
+
 // looper
 
 .app-image {
   width: 30%;
   margin: 0 1%
 }
+
 .looper-preview {
   background-color: lighten(#F7A4CF, 15%);
   color: darken(#FFC0E0, 9%);
-}
-
-.image-looper {
-  background-color: lighten(#F7A4CF, 15%);
-  background-image:
-    url("/images/looper-shot-1.png"),
-    url("/images/looper-shot-2.png"),
-    url("/images/looper-shot-3.png");
-  height: 800px;
-  background-position: 0 $baseline, 50% $baseline, 100% $baseline;
-  background-size: 33%;
-  background-repeat: no-repeat;
 }
 
 .looper {
