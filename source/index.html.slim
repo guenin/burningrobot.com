@@ -7,17 +7,13 @@ head
     h1 Burning Robot
     div
 main
-  article.looper
+  section#layoutplus
+    = partial 'portfolio/layoutplus'
+  article#looper
     = partial 'portfolio/looper'
-  article.bview
+  article#bview
     = partial 'portfolio/bview'
-  section.layoutplus
-    article.content
-      .bg.bg-layoutplus
-        = partial 'portfolio/layoutplus'
-  section.bikemaps
-    article.content
-      .bg.bg-bikemaps
-        = partial 'portfolio/bikemaps'
+  section#bikemaps
+    = partial 'portfolio/bikemaps'
 footer
   .content Handcrafted in Portland, Oregon
