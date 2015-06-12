@@ -65,7 +65,8 @@ li:before {
 
 section.features,
 section.tech,
-section.download {
+section.download,
+section.body {
   max-width: 400px;
   margin: (3 * $baseline) auto;
 }
@@ -79,7 +80,7 @@ section.download {
 a.download {
   border: 1px dashed #333;
   display: inline-block;
-  margin: $baseline 0 $baseline -1px;
+  margin: $baseline 0 0 -1px;
   padding: $baseline * 0.66;
   text-decoration: none;
   color: inherit;
@@ -94,47 +95,31 @@ a.download:active {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
-}
-a:hover {
-  text-decoration: underline  ;
-}
-
-// looper
-
-.app-image {
-  width: 30%;
-  margin: 0 1%
-}
-.looper-preview {
-  background-color: lighten(#F7A4CF, 15%);
-}
-
-.image-looper {
-  background-color: lighten(#F7A4CF, 15%);
-  background-image:
-    url("/images/looper-shot-1.png"),
-    url("/images/looper-shot-2.png"),
-    url("/images/looper-shot-3.png");
-  height: 800px;
-  background-position: 0 $baseline, 50% $baseline, 100% $baseline;
-  background-size: 33%;
-  background-repeat: no-repeat;
-}
-
-.looper {
-  background: darken(#FBA4D1, 20%);
-  background: #fff;
-  color: #444;
 }
 
 footer {
   margin: $baseline 0;
+  text-align: center;
 }
 
-footer .content {
-  text-align: center;
+
+.avatar {
+  width: 75%;
+  margin: 0 auto $baseline * 5;
+  display: block;
+  border-radius: 50%;
+}
+
+#contact {
+  background: #777;
+  color: #fff;
+}
+
+
+section.contact-content {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 // small screens
@@ -153,3 +138,4 @@ footer .content {
 @import "portfolio/bikemaps";
 @import "portfolio/bview";
 @import "portfolio/layoutplus";
+@import "portfolio/looper";

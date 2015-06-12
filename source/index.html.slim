@@ -3,10 +3,10 @@ title: Burning Robot
 ---
 
 head
-  .content
-    h1 Burning Robot
-    div
+  h1 Burning Robot
 main
+  section#about
+    = partial 'about/me'
   section#layoutplus
     = partial 'portfolio/layoutplus'
   article#looper
@@ -15,5 +15,5 @@ main
     = partial 'portfolio/bview'
   section#bikemaps
     = partial 'portfolio/bikemaps'
-footer
-  .content Handcrafted in Portland, Oregon
+  section#contact
+    = partial 'about/contact'
