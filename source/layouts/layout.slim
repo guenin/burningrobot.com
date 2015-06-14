@@ -12,6 +12,12 @@ html
     / Use title if it's in the page YAML frontmatter
     title = data.page.title || "The Middleman"
 
+    - if data.page.og
+      meta property="og:title" content=data.page.og.title
+      meta property="og:description" content=data.page.og.description
+      meta property="og:url" content=data.page.og.url
+      meta property="og:image" content=image_url(data.page.og.image)
+
     == stylesheet_link_tag "normalize", "all"
     /== javascript_include_tag  "all"
 
