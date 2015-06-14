@@ -64,16 +64,16 @@ li:before {
   margin: $baseline 0;
 }
 
-section.features,
-section.tech,
-section.download,
-section.body {
+.features,
+.tech,
+.download,
+.body {
   max-width: 400px + 4 * $baseline;
   margin: (3 * $baseline) auto;
   padding: 0 (2 * $baseline);
 }
 
-section.download {
+.download {
   text-align: center;
 }
 
