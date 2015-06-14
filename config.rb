@@ -34,6 +34,17 @@ require "slim"
 # Helpers
 ###
 
+set :protocol, "http://"
+set :host, "burningrobot.com"
+
+helpers do
+
+  def image_url(source)
+    protocol + host + "/" + image_path(source)
+  end
+
+end
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
